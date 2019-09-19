@@ -1,11 +1,428 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>メンテナンス中 - Railsチュートリアル</title>
-  </head>
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head><script src="https://connect.facebook.net/en_US/sdk.js?hash=e81326f5e70d6f291605b5bcad77fe9f&amp;ua=modern_es6" async="" crossorigin="anonymous"></script>
+  <title>404 File Not Found - Railsチュートリアル</title>
+  <meta name="apple-mobile-web-app-title" content="Rails Tutorial">
+  <meta name="application-name" content="Rails Tutorial">
 
-  <body>
-    <h1>Railsチュートリアルはメンテナンス中です</h1>
-  </body>
-</html>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="all">
+  <meta name="MSSmartTagsPreventParsing" content="true">
+  <meta name="title" content="Ruby on Rails チュートリアル：実例を使って Rails を学ぼう">
+  <meta name="description" content="お探しのページは見つかりませんでした">
+  <meta name="keywords" content="Ruby Rails チュートリアル ウェブ Rails開発 入門">
+  <meta name="author" content="Michael Hartl">
+  <link rel="author" type="text/plain" href="/humans.txt">
+  <meta name="viewport" content="width=device-width,initial-scale1=1">
+
+  <meta property="fb:admins" content="715330868">
+  <meta property="fb:app_id" content="144878509039953">
+  <meta property="og:title" content="404 File Not Found - Railsチュートリアル">
+  <meta property="og:site_name" content="404 File Not Found - Railsチュートリアル">
+  <meta property="og:image" content="http://railstutorial.jp/images/layout/logo.png">
+  <meta property="og:url" content="https://railstutorial.jp/404/not_found">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="お探しのページは見つかりませんでした">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@RailsTutorialJP">
+  <meta name="twitter:title" content="Ruby on Rails チュートリアル：実例を使って Rails を学ぼう">
+  <meta name="twitter:description" content="お探しのページは見つかりませんでした">
+  <meta name="twitter:image" content="http://railstutorial.jp/images/layout/logo.png">
+  <meta name="twitter:url" content="http://railstutorial.jp/">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#6e0421">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;appId=144878509039953&amp;version=v2.0"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W5X8M22"></script><script src="/assets/application-a9a8df604f363cbacef78799aaba0b6d0dc11ff3ac9b62977253670128569f0b.js"></script>
+
+  <link rel="stylesheet" media="all" href="./application.css">
+
+  <link rel="stylesheet" media="screen, projection" href="screen.css">
+  <link rel="stylesheet" media="print" href="/assets/print-2bddaa0f8df1ab5ddb614e3cefa429f6875252542b536fa7560d737a1e4e5b34.css">
+  <link rel="stylesheet" media="screen, projection" href="/assets/social-e552f1f8160f4e73a01bfe2d868d9f91957968b24ac2a598de42abdad49de7ec.css">
+  <!--[if lte IE 7]>
+    <link rel="stylesheet" media="screen" href="/assets/ie-1232fac3f4dcdce0b4cb1e7f792b26045f5e46119d622033b077d5c62d212ff0.css" />
+  <![endif]-->
+  <!--[if lt IE 7]>  <div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>    <div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>    <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>      <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>      <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>        <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>You are using an outdated browser</div>        <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>For a better experience using this site, please upgrade to a modern web browser.</div>      </div>      <div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>      <div style='width: 75px; float: left;'><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>      <div style='width: 73px; float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>      <div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>    </div>  </div>  <![endif]-->
+  <link href="http://feeds.feedburner.com/railstutorial" rel="alternate" title="Rails Tutorial News" type="application/rss+xml">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W5X8M22');</script>
+  <!-- End Google Tag Manager -->
+
+  <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="SSDmgPJeNjdpuwnZwwsmw+S90GihE73IQ8iHodUm/ZrVvFcT2tqIQGnJavoOiH2UDyt4sewmyRG0+ZON0Joidg==">
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline~tweet.ec04a6cb5ba879d0e0db41f211639fdf.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/timeline.0a7b4db67eacd23e35c5ce02e6ea3470.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5X8M22"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<article class="webpage">
+<div id="container">
+  <header id="header" class="clearfix">
+<section id="title">
+  <div id="logo"><a href="/"><img alt="Rails チュートリアル Logo" src="/images/layout/logo.png"></a></div>
+  <h1 id="name">
+    <a href="/">Ruby on Rails チュートリアル</a>
+  </h1>
+  <div class="hidden_box">
+      <label for="login-pc">アカウント</label>
+    <input type="checkbox" id="login-pc">
+    <div class="hidden_show">
+      <!--非表示ここから-->
+        <ul class="login-menu-sub">
+          <li><a href="/dashboard/2019-09">ダッシュボード</a></li>
+          <li><a rel="nofollow" data-method="delete" href="/logout">ログアウト</a></li>
+        </ul>
+      <!--ここまで-->
+    </div>
+  </div>
+
+<div class="hamburger-button">
+<div class="menu-trigger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</div>
+
+<div class="drawr" style="height: 100%;">
+<div class="login-section">
+  <table>
+    <tbody><tr>
+      <td><a href="/dashboard/2019-09">ダッシュボード</a></td>
+      <td><a rel="nofollow" data-method="delete" href="/logout">ログアウト</a></td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="movie-look">
+
+</div>
+
+
+<hr>
+
+<ul id="menu">
+  <li><a href="/">ホーム</a></li>
+  <li><a href="/seminars">解説セミナー</a></li>
+  <li><a class="disable-drawr" href="/#screencast">解説動画 (質問対応付き)</a></li>
+  <li><a href="/help">ヘルプ</a></li>
+  <li><a href="/contact">お問い合わせ</a></li>
+</ul>
+
+<div id="chapters"></div>
+
+<div id="announcement"></div>
+
+<div class="drawr-share">
+  <div class="drawr-links">
+    <div class="mobile-link-share hatebu">
+      <iframe class="hatena-bookmark-button-frame" title="このエントリーをはてなブックマークに追加" frameborder="0" scrolling="no" width="88" height="58" src="javascript:false" style="width: 88px; height: 58px;"></iframe>
+      <script async="async" charset="utf-8" src="https://b.st-hatena.com/js/bookmark_button.js" type="text/javascript"></script>
+    </div>
+    <div class="fb-like mobile-link-share fb_iframe_widget" data-action="like" data-href="https://railstutorial.jp/" data-layout="box_count" data-share="false" data-show-faces="true" data-size="large" style="height: 85; width:80; margin-left: 15px; margin-right: 15px; margin-top: -5px; display: inline-flex;" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=144878509039953&amp;container_width=0&amp;href=https%3A%2F%2Frailstutorial.jp%2F&amp;layout=box_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=true&amp;size=large"><span style="vertical-align: bottom; width: 0px; height: 0px;"><iframe name="f9165fbec892f4" width="1000px" height="1000px" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=144878509039953&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df3cf49dcad32f9%26domain%3Drailstutorial.jp%26origin%3Dhttps%253A%252F%252Frailstutorial.jp%252Ff11bf98796db1a4%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Frailstutorial.jp%2F&amp;layout=box_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=true&amp;size=large" class="" style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span></div>
+    <div class="mobile-link-share custom-mobile-link">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frailstutorial.jp%2F&amp;src=sdkpreparse" target="_blank">
+      <div class="share-description-top">
+        <p>シェアする</p>
+      </div>
+
+      <div class="share-description-bottom" style="background-color: #3b5998; border-color: #3b5998;">
+        <svg stroke="#fff" fill="#fff" height="33" viewBox="0 0 1792 1792" width="33" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+        </path></svg>
+        <p style="color: #fff; float:right; margin-right:15px;">Share!</p>
+      </div></a>
+    </div>
+
+    <div class="mobile-link-share custom-mobile-link">
+      <a href="https://twitter.com/intent/tweet?hashtags=Rails%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB&amp;original_referer=http%3A%2F%2Flocalhost%3A3000%2F&amp;ref_src=twsrc%5Etfw&amp;text=Rails%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%EF%BC%9A%E5%AE%9F%E4%BE%8B%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6Rails%E3%82%92%E5%AD%A6%E3%81%BC%E3%81%86&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Frailstutorial.jp%2F&amp;via=RailsTutorialJP">
+        <div class="share-description-top">
+          <p>ツイートする</p>
+        </div>
+
+        <div class="share-description-bottom" style="background-color: #1da1f2; border-color: #1da1f2;">
+          <svg stroke="#fff" fill="#fff" height="33" viewBox="0 0 1792 1792" width="33" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path></svg>
+          <p style="color: #fff; float:right; margin-right:15px;">Tweet!</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="mobile-link-share custom-mobile-link">
+      <a href="https://twitter.com/intent/tweet?user_id=2218766892&amp;lang=ja&amp;text=%E3%81%93%E3%81%AE%E7%AB%A0%E3%81%AEooo%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%A7%E3%81%99%E3%81%8C%E3%80%81%E6%AD%A3%E3%81%97%E3%81%8F%E3%81%AFxxx%E3%81%A0%E3%81%A8%E6%80%9D%E3%81%84%E3%81%BE%E3%81%99%E3%80%82&amp;url=http%3A%2F%2Frailstutorial.jp/404?version=&amp;hashtags=Railsチュートリアル">
+          <div class="share-description-top">
+          <p>誤訳を報告する</p>
+        </div>
+
+        <div class="share-description-bottom" style="background-color: #1da1f2; border-color: #1da1f2;">
+          <svg stroke="#fff" fill="#fff" height="33" viewBox="0 0 1792 1792" width="33" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path></svg>
+          <p style="color: #fff; float:right; margin-right:15px;">Tweet!</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div style="padding-top: 1em; margin-bottom: 70px; overflow:hidden;">
+    <a href="http://railsguides.jp"><img alt="Railsガイド" src="/images/banners/railsguides-large-size_600_200.png" width="300px"></a>
+  </div>
+</div>
+</div>
+
+</section>
+</header>
+
+<div class="menu">
+<div class="links">
+  <div class="box">
+    <span>
+      <a href="/">ホーム</a>
+    </span>
+    <span class="division">|</span>
+    <span>
+      <a href="/help">ヘルプ</a>
+    </span>
+    <span class="division">|</span>
+    <span>
+      <a href="/contact">お問い合わせ</a>
+    </span>
+    <span class="division">|</span>
+    <span>
+      <a href="/#screencast">解説動画・質問対応</a>
+    </span>
+    <span class="division">|</span>
+    <span>
+      <a href="/#ebook">電子書籍</a>
+    </span>
+    <span class="division">|</span>
+    <span style="padding-top:8px">
+      <iframe class="hatena-bookmark-button-frame" title="このエントリーをはてなブックマークに追加" frameborder="0" scrolling="no" width="47" height="20" src="javascript:false" style="width: 47px; height: 20px;"></iframe><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </span>
+    <span class="division">|</span>
+    <div class="fb-like fb_iframe_widget" data-href="https://railstutorial.jp/" data-send="false" data-layout="button_count" data-show-faces="false" data-size="small" data-font="arial" style="margin-top: -5px;" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=144878509039953&amp;container_width=0&amp;font=arial&amp;href=https%3A%2F%2Frailstutorial.jp%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;size=small"><span style="vertical-align: bottom; width: 73px; height: 20px;"><iframe name="f3a74f083135d8" width="1000px" height="1000px" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.0/plugins/like.php?app_id=144878509039953&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df32eb1c0e13891%26domain%3Drailstutorial.jp%26origin%3Dhttps%253A%252F%252Frailstutorial.jp%252Ff11bf98796db1a4%26relation%3Dparent.parent&amp;container_width=0&amp;font=arial&amp;href=https%3A%2F%2Frailstutorial.jp%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;size=small" style="border: none; visibility: visible; width: 73px; height: 20px;" class=""></iframe></span></div>
+  </div>
+</div>
+</div>
+
+
+  <div id="content">
+    <section id="main">
+    <div id="option">
+
+        <section id="page404">
+
+          <h1>404 File Not Found.</h1>
+          <h2>お探しのページは見つかりませんでした。</h2>
+          <p>お探しのページは一時的にアクセスできない状況にあるか、<br class="sp-ignore">
+            レールから外れた可能性があります。</p>
+          <p>Rails学習のレールを見失わないよう、こちらへどうぞ。</p>
+          <p>
+            <a href="/"><i class="fas fa-chevron-circle-left"></i> トップページへ</a>
+          </p>
+    <img src="/images/layout/logo.png" alt="Rails Tutorial logo" class="logo" style="padding-bottom: 100px;">
+
+    <h2><a href="https://twitter.com/RailsTutorialJP">@RailsTutorialJP</a> からの最近のお知らせ</h2>
+    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; height: 1723.7px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px;" data-widget-id="profile:RailsTutorialJP" title="Twitterタイムライン"></iframe> <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </section>
+
+    </div>
+    </section>
+  </div><!--//content-->
+</div><!--//container-->
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://staticxx.facebook.com/connect/xd_arbiter.php?version=44#channel=f11bf98796db1a4&amp;origin=https%3A%2F%2Frailstutorial.jp" style="border: none;"></iframe></div><div></div></div></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=144878509039953&version=v2.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!--目次へ戻るボタン-->
+<!--<div id="page_top"><a href="#toc"></a></div>-->
+
+<section id="footer">
+<div class="footer-inner">
+  <div class="footer-box">
+    <a href="/"><img src="/images/layout/logo.png" alt="Railsチュートリアルのロゴ" class="footer-logoimg"></a>
+    <a href="/"><img src="/images/layout/logo-ja.png" alt="Railsチュートリアル" class="footer-sitetitle"></a>
+    <div class="comment">
+      <p>Railsチュートリアルは <a href="https://yasslab.jp/ja/agile">Ruby/Rails の開発支援</a>をする <a href="http://yasslab.jp/ja/" target="_blank">YassLab 株式会社</a>によって運営されています。</p>
+      <p>コンテンツを継続的に提供するため、<a href="/#ebook">電子書籍</a>や<a href="/#screencast">解説動画</a>のご購入を検討して頂けると嬉しいです m(_ _)m</p>
+      <p>社員研修や商用利用などに関するご相談がありましたら<a href="/contact">お問い合わせ</a>ページよりお気軽にご連絡ください :)</p>
+    </div>
+  </div><!--//footer-box-->
+
+  <div class="footer-box">
+    <h3>サービス</h3>
+    <ul>
+      <li><a href="/trial">お試しプラン</a></li>
+      <li><a href="/#plans">選べる学習プラン</a></li>
+        <ul>
+          <li>動画で学ぶ</li>
+          <li>動画+質問で学ぶ</li>
+          <li>スクールで学ぶ</li>
+        </ul>
+      <li><a href="/#ebook">電子書籍</a></li>
+      <li><a href="/contact#license">利用許諾 (ライセンス契約)</a></li>
+    </ul>
+    <h3>法人の方へ</h3>
+    <ul>
+      <li><a href="/business">法人プラン</a></li>
+<li><a href="/term-of-use">利用規約</a></li>
+    </ul>
+  </div><!--//footer-box-->
+  <div class="footer-box">
+    <h3>運営会社について</h3>
+    <ul>
+      <li><a href="https://yasslab.jp/ja" target="_blank">運営会社</a></li>
+      <li><a href="/policy">特定商取引法に基づく表記</a></li>
+      <li><a href="https://yasslab.jp/ja/privacy" target="_blank">プライバシーポリシー</a></li>
+      <li><a href="/contact">お問い合わせ</a></li>
+    </ul>
+    <h3>リンク</h3>
+    <ul>
+      <li><a href="/#foreword">原著者からのメッセージ</a></li>
+      <li><a href="/#toc">目次へ</a></li>
+      <li><a href="/help">ヘルプ</a></li>
+      <li><a href="https://github.com/yasslab/sample_apps" target="_blank" title="GitHubへ">コードサンプル</a></li>
+      <li><a href="https://twitter.com/search?f=tweets&amp;q=%20%23Rails%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB%20OR%20%23RailsTutorial&amp;src=typd&amp;lang=ja" target="_blank" title="twitterへのリンク">みんなのつぶやき</a></li>
+      <li><a href="https://railsguides.jp/" target="_blank">Railsガイド</a></li>
+    </ul>
+  </div><!--//footer-box-->
+</div><!--footer-inner-->
+</section>
+
+</article>
+
+
+
+<script src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async=""></script><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.d6364fae9340b0be5f13818370141fd0.html?origin=https%3A%2F%2Frailstutorial.jp" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>
