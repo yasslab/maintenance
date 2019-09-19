@@ -176,21 +176,21 @@ article.webpage #container #content #sidebar .connect ul li {
     list-style-type: none;
     border-bottom: 1px solid #999;
 }
-article.webpage #container #content #sidebar .connect ul li.feed a { background: #fff url('/images/icons/feed-icon24x24.png') no-repeat scroll }
-article.webpage #container #content #sidebar .connect ul li.facebook a { background: #fff url('/images/icons/facebook-icon24x24.png') no-repeat scroll }
-article.webpage #container #content #sidebar .connect ul li.email a { background: #fff url('/images/icons/email-icon24x24.png') no-repeat scroll }
-article.webpage #container #content #sidebar .connect ul li.railstutorialjp a { background: #fff url('/images/icons/railstutorialjp-icon24x24.png') no-repeat scroll }
+article.webpage #container #content #sidebar .connect ul li.feed a { background: #fff url('./images/icons/feed-icon24x24.png') no-repeat scroll }
+article.webpage #container #content #sidebar .connect ul li.facebook a { background: #fff url('./images/icons/facebook-icon24x24.png') no-repeat scroll }
+article.webpage #container #content #sidebar .connect ul li.email a { background: #fff url('./images/icons/email-icon24x24.png') no-repeat scroll }
+article.webpage #container #content #sidebar .connect ul li.railstutorialjp a { background: #fff url('./images/icons/railstutorialjp-icon24x24.png') no-repeat scroll }
 article.webpage #container #content #sidebar .connect ul li.github a,
 #related-link  ul li.github a {
-  background: #fff url('/images/icons/github-icon24x24.png') no-repeat scroll
+  background: #fff url('./images/icons/github-icon24x24.png') no-repeat scroll
 }
 article.webpage #container #content #sidebar .connect ul li.twitter a,
 #related-link  ul li.twitter a {
-  background: #fff url('/images/icons/twitter-icon24x24.png') no-repeat scroll
+  background: #fff url('./images/icons/twitter-icon24x24.png') no-repeat scroll
 }
 article.webpage #container #content #sidebar .connect ul li.help a,
 #related-link  ul li.help a {
-  background: #fff url('/images/icons/help-icon24x24.png') no-repeat scroll
+  background: #fff url('./images/icons/help-icon24x24.png') no-repeat scroll
 }
 article.webpage #container #content #sidebar .connect ul li a,
 #related-link  ul li a {
@@ -347,8 +347,8 @@ article.book #sidebar #navtool .controller .version-select select,
     -webkit-appearance: none;/* ベンダープレフィックス(Google Chrome、Safari用) */
   	-moz-appearance: none;	/* ベンダープレフィックス(Firefox用) */
   	appearance: none;		/* 標準のスタイルを無効にする */
-  	background: url('/images/layout/arrow01.png') right 50% no-repeat, -webkit-linear-gradient(top, #fff 0%,#efebe1 100%);
-  	background: url('/images/layout/arrow01.png') right 50% no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+  	background: url('./images/layout/arrow01.png') right 50% no-repeat, -webkit-linear-gradient(top, #fff 0%,#efebe1 100%);
+  	background: url('./images/layout/arrow01.png') right 50% no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
   	background-size: 20px, 100%;
 }
 
@@ -416,14 +416,14 @@ article.book #sidebar .menu { text-align: center }
 }
 #container #header #title h1#name a {
     display: block;
-    background: transparent url('/images/layout/title-pc.png') no-repeat;
+    background: transparent url('./images/layout/title-pc.png') no-repeat;
     background-size: contain;
     height: 40px;
     width: 530px;
 }
 @media screen and (max-width: 870px) {
   #container #header #title h1#name a {
-    background: transparent url('/images/layout/title-sp.png') no-repeat;
+    background: transparent url('./images/layout/title-sp.png') no-repeat;
   }
 }
 #container #header #title a {
@@ -1930,7 +1930,7 @@ caption { background: #eee }
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.showgrid { background: url(/images/grid.png) }
+.showgrid { background: url(./images/grid.png) }
 label { font-weight: bold }
 fieldset {
     padding: 1.4em;
@@ -2010,7 +2010,7 @@ textarea {
 body {
     margin-left: -10px;
     margin-right: -10px;
-    background: #eae4df url(/images/layout/background.png) top left repeat-x;
+    background: #eae4df url(./images/layout/background.png) top left repeat-x;
     overflow-x: hidden;
 }
 
@@ -2028,7 +2028,7 @@ article.webpage #content {
     margin-right: 40px;
 }
 article.webpage #content {
-    background: transparent url('/images/layout/website_content.png') repeat-y;
+    background: transparent url('./images/layout/website_content.png') repeat-y;
 }
 article.webpage #header,
 article.book #header {
@@ -2189,7 +2189,7 @@ article.book #header {
 #content .message-from-author p {
   margin-top: 1em;
   line-height: 36px;
-  background: url(/images/layout/bg-note.png)bottom;
+  background: url(./images/layout/bg-note.png)bottom;
 }
 @media screen and (max-width: 980px) {
   body #container {
@@ -2608,7 +2608,7 @@ article.book #header {
 .media-list td.detail .icon_time {
   width: 28px;
   height: 28px;
-  background: transparent url('/images/icon-time.png') no-repeat;
+  background: transparent url('./images/icon-time.png') no-repeat;
   background-size: contain;
 }
 .media-list td.detail .movie_time {
@@ -3031,7 +3031,7 @@ h2.business-page,h2.trial-page,.buy-screencast h2,table th.movie-archive {
 }
 #page404 img.logo {
   position: absolute;
-  bottom:0;
+  top: 135px;
   right: 0;
 }
 #page404 h1 {
@@ -3574,7 +3574,7 @@ p.coupon-notice span.coupon-message{
     position: fixed;
     right: 30px;
     bottom: -62px;
-    background: transparent url('/images/buttons/btn-toc.png') no-repeat;
+    background: transparent url('./images/buttons/btn-toc.png') no-repeat;
   }
 }
 /*動画一覧のページ*/
